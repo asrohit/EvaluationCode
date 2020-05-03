@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="10dp">
+
+
+        <EditText
+            android:id="@+id/txt_RollNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Roll Number"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/txt_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textColor="@color/black"
+            android:layout_below="@id/txt_RollNumber"/>
+
+        <EditText
+            android:id="@+id/txt_Score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Score"
+            android:textColor="@color/black"
+            android:layout_below="@id/txt_Name"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_Score"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btn_Insert"
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:text="Insert"
+                android:textAllCaps="false"
+                android:background="@color/skyblue"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+                <Button
+                    android:id="@+id/btn_Delete"
+                    android:layout_width="112dp"
+                    android:layout_height="wrap_content"
+                    android:text="Delete"
+                    android:textAllCaps="false"
+                    android:background="@color/skyblue"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="20dp"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_Modify"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:text="Modify"
+            android:textAllCaps="false"
+            android:background="@color/skyblue"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/btn_View"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@color/skyblue"
+            android:text="View"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
